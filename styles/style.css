@@ -14,14 +14,14 @@
   align-items: center;
 }
 
-.menu__list {
+.header__links-list {
   display: flex;
   flex-direction: row;
   gap: 32px;
   list-style: circle;
 }
 
-.menu__list__element {
+.header__links-list-item {
   text-transform: lowercase;
   text-decoration: underline;
   font-weight: 400;
@@ -30,12 +30,12 @@
   text-underline-offset: 4px;
 }
 
-.menu__list__element-first {
+.header__links-list-item_no-bullit {
   text-decoration: none;
   display: inline;
 }
 
-.header__logo {
+.header__logo-image {
   width: 148px;
   height: 105px;
 }
@@ -79,7 +79,7 @@
   gap: 20px;
 }
 
-.cover__text {
+.aligned-text {
   color: white;
   font-weight: 700;
   font-size: 100px;
@@ -92,17 +92,17 @@
   letter-spacing: 0.6em;
 }
 
-.center__position {
+.aligned-text_center {
   align-self: center;
   line-height: 100px;
 }
 
-.lower__position {
+.aligned-text_right {
   align-self: end;
   line-height: 100px;
 }
 
-.cover__lower {
+.cover__description {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -110,7 +110,7 @@
   gap: 79px;
 }
 
-.cover__label {
+.cover__description-text {
   font-weight: 400;
   color: white;
   text-transform: uppercase;
@@ -130,7 +130,7 @@
   letter-spacing: 1.1em;
 }
 
-.cover__button {
+.bet-button {
   color: white;
   font-weight: 500;
   font-size: 22px;
@@ -155,37 +155,37 @@
   gap: 30px;
 }
 
-.lots__title {
+.lots__heading {
   margin-left: 40px;
 }
 
-.lots__cards__list {
+.lots__card-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
 }
 
-.lots__card {
+.lots__card-list-item {
   width: 334px;
   height: 563px;
 }
 
-.first-lot {
+.card_type_film {
   background-image: url(../images/card-lot-01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.second-lot {
+.card_type_book {
   background-image: url(../images/card-lot-02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.third-lot {
+.card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -245,7 +245,7 @@
   height: 595px;
 }
 
-.about__logo__container {
+.about__logo {
   background-color: black;
   height: 240px;
   width: 240px;
@@ -255,12 +255,12 @@
   justify-content: center;
 }
 
-.about__logo {
+.about__logo-image {
   width: 148px;
   height: 114px;
 }
 
-.about__content {
+.about__column {
   display: flex;
   flex-direction: column;
   width: 693px;
@@ -312,7 +312,7 @@
   gap: 185px;
 }
 
-.menu__list__footer {
+.footer__menu-list {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -320,13 +320,14 @@
   align-items: center;
 }
 
-.footer__media {
+.footer__social-list {
   display: flex;
   flex-direction: row;
   gap: 48px;
+  list-style: none;
 }
 
-.media__logo {
+.footer__social-icon {
   height: 48px;
   width: 48px;
 }
