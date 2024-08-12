@@ -12,6 +12,7 @@
   flex-direction: row;
   gap: 36px;
   align-items: center;
+  padding-left: 26.52px;
 }
 
 .header__links-list {
@@ -73,7 +74,7 @@
   flex-direction: column;
   gap: 135px;
   z-index: 1;
-  position: absolute;
+  position: relative;
 }
 
 .cover__title {
@@ -119,18 +120,6 @@
   text-transform: uppercase;
   font-size: 22px;
   line-height: 1.27;
-}
-
-.cover__label__accent__first {
-  letter-spacing: 0.9em;
-}
-
-.cover__label__accent__second {
-  letter-spacing: 0.8em;
-}
-
-.cover__label__accent__third {
-  letter-spacing: 1.1em;
 }
 
 .bet-button {
@@ -207,7 +196,7 @@
 
 .card__content {
   padding: 51px 40px 48px;
-  position: absolute;
+  position: relative;
   width: 334px;
   height: 563px;
   z-index: 1;
@@ -231,11 +220,11 @@
   line-height: 1.2;
 }
 
-.lots__more {
+.lots__look-more-link {
   margin-left: 40px;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.7;
+  line-height: 1.17;
   text-decoration: underline;
   text-underline-offset: 5px;
 }
