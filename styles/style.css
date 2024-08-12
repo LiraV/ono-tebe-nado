@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.header__left {
+.header__main {
   display: flex;
   flex-direction: row;
   gap: 36px;
@@ -21,7 +21,7 @@
   list-style: circle;
 }
 
-.header__links-list-item {
+.links-list-item {
   text-transform: lowercase;
   text-decoration: underline;
   font-weight: 400;
@@ -30,7 +30,7 @@
   text-underline-offset: 4px;
 }
 
-.header__links-list-item_no-bullit {
+.links-list-item_no-bullit {
   text-decoration: none;
   display: inline;
 }
@@ -59,22 +59,21 @@
 .cover {
   width: 1100px;
   height: 757px;
-}
-
-.cover__image {
-  height: 757px;
-  width: 1100px;
-  position: absolute;
-  z-index: -1;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cover__content {
-  position: absolute;
+  
   width: 1100px;
   padding: 165px 50px 51px;
   display: flex;
   flex-direction: column;
   gap: 135px;
+  z-index: 1;
+  position: absolute;
 }
 
 .cover__title {
@@ -140,16 +139,18 @@
   font-size: 22px;
   line-height: 1.17;
   background-color: transparent;
-  border: solid white;
+  border: solid currentColor;
   padding: 13px 32px 11px 31px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .overlay {
-  height: 757px;
-  width: 1100px;
   background-color: black;
   opacity: 0.6;
   position: absolute;
+  width: inherit;
+  height: inherit;
 }
 
 .lots {
@@ -274,37 +275,16 @@
   align-self: flex-end;
 }
 
-.about__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.2;
+.about__content {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.span__one {
-  letter-spacing: 0.01em;
-}
-
-.no__span {
-  letter-spacing: normal;
-}
-
-.span__two {
-  letter-spacing: 0.02em;
-}
-
-.span__minus__one {
-  letter-spacing: -0.01em;
-}
-
-.span__three {
-  letter-spacing: 0.03em;
-}
-
-.span__four {
-  letter-spacing: 0.04em;
+.about__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 .footer {
