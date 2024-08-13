@@ -53,17 +53,18 @@
   text-underline-offset: 4px;
 }
 
-.address {
+address {
     font-style: normal;
 }
 
 .cover {
   width: 1100px;
-  height: 757px;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
 .cover__content {
@@ -139,7 +140,7 @@
   opacity: 0.6;
   position: absolute;
   width: inherit;
-  height: inherit;
+  height: 100%;
 }
 
 .lots {
@@ -162,43 +163,35 @@
 
 .lots__card-list-item {
   width: 334px;
-  height: 563px;
-}
-
-.card_type_film {
-  background-image: url(../images/card-lot-01.jpg);
+  min-height: 563px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.overlay__card {
-  height: 563px;
-  width: 334px;
-  background-color: black;
-  opacity: 0.6;
-  position: absolute;
+.card__link {
+  text-decoration: none;
 }
 
 .card__content {
   padding: 51px 40px 48px;
   position: relative;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   z-index: 1;
   color: white;
   display: flex;
@@ -236,7 +229,7 @@
   padding-top: 35px;
   padding-left: 47px;
   gap: 72px;
-  height: 595px;
+  min-height: 595px;
 }
 
 .about__logo {
@@ -258,7 +251,7 @@
   display: flex;
   flex-direction: column;
   width: 693px;
-  height: 449px;
+  min-height: 449px;
   gap: 100px;
   justify-content: end;
   align-self: flex-end;
@@ -303,4 +296,36 @@
 .footer__social-icon {
   height: 48px;
   width: 48px;
+}
+
+.no__spacing {
+  letter-spacing: 0em;
+}
+
+.one__spacing {
+  letter-spacing: 0.01em;
+}
+
+.two__spacing {
+  letter-spacing: 0.02em;
+}
+
+.three__spacing {
+  letter-spacing: 0.03em;
+}
+
+.four__spacing {
+  letter-spacing: 0.04em;
+}
+
+.eight__spacing {
+  letter-spacing: 0.8em;
+}
+
+.one-one__spacing {
+  letter-spacing: 1.1em;
+}
+
+.one-two__spacing {
+  letter-spacing: 1.2em;
 }
