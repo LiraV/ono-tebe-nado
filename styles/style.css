@@ -121,6 +121,7 @@ address {
   text-transform: uppercase;
   font-size: 22px;
   line-height: 1.27;
+  word-spacing: 0.9em;
 }
 
 .bet-button {
@@ -229,7 +230,6 @@ address {
   padding-top: 35px;
   padding-left: 47px;
   gap: 72px;
-  min-height: 595px;
 }
 
 .about__logo {
@@ -248,6 +248,7 @@ address {
 }
 
 .about__column {
+  margin-top: 98px;
   display: flex;
   flex-direction: column;
   width: 693px;
@@ -300,32 +301,4 @@ address {
 
 .no__spacing {
   letter-spacing: 0em;
-}
-
-.one__spacing {
-  letter-spacing: 0.01em;
-}
-
-.two__spacing {
-  letter-spacing: 0.02em;
-}
-
-.three__spacing {
-  letter-spacing: 0.03em;
-}
-
-.four__spacing {
-  letter-spacing: 0.04em;
-}
-
-.eight__spacing {
-  letter-spacing: 0.8em;
-}
-
-.one-one__spacing {
-  letter-spacing: 1.1em;
-}
-
-.one-two__spacing {
-  letter-spacing: 1.2em;
 }
